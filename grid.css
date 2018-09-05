@@ -1,0 +1,72 @@
+*{
+		box-sizing: border-box;
+        margin:0;
+        padding: 0;
+		
+}
+
+.mygrid-1 {
+		width:8.33%;
+		float:left;
+}
+
+.mygrid-2 {
+		width:16.66%;
+		float:left;
+}
+
+.mygrid-3 {
+		width:25%;
+		float:left;
+}
+
+.mygrid-4 {
+		width:33.33%;
+		float:left;
+}
+
+.mygrid-5 {
+		width:41.66%;
+		float:left;
+}
+
+.mygrid-6 {
+		width:50%;
+		float:left;
+}
+
+.mygrid-7 {
+		width:58.33%;
+		float:left;
+}
+
+.mygrid-8 {
+		width:66.66%;
+		float:left;
+}
+
+.mygrid-9 {
+		width:75%;
+		float:left;
+}
+
+.mygrid-10 {
+		width:83.33%;
+		float:left;
+}
+
+.mygrid-11 {
+		width:91.66%;
+		float:left;
+}
+
+.mygrid-12 {
+		width:100%;
+		float:left;
+}
+
+.container {
+	
+	clear:both;
+	margin: 5px 0px;
+}

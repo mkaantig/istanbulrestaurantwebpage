@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Istanbul Restaurant & Cafe </title>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="grid.css" type="text/css" rel="stylesheet">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+		
+		function CheckFields(){
+			Errors = 0;
+			ErrorMessage = "";
+			
+			if($('#name').val().trim() == ''){
+				Errors++;
+				ErrorMessage = ErrorMessage + ' The course code cannot be blank.' ;
+			}
+			if($('#surname').val().trim() == ''){
+				Errors++;
+				ErrorMessage = ErrorMessage + ' The surname cannot be blank.' ;
+			}
+			if($('#food').val().trim() == ''){
+				Errors++;
+				ErrorMessage = ErrorMessage + ' The food cannot be blank.' ;
+			}
+            if($('#telno').val().trim() == ''){
+				Errors++;
+				ErrorMessage = ErrorMessage + ' The telno cannot be blank.' ;
+			}
+            if($('#selection').val().trim() == ''){
+				Errors++;
+				ErrorMessage = ErrorMessage + ' The selection cannot be blank.' ;
+			}
+			if(Errors!=0){
+				alert(ErrorMessage);
+			} 
+		}
+		
+		
+	</script>
+    </head>
+    <body class="mygrid-12">
+        <header class="mygrid-12" id="top">
+            <div class="mygrid-3" align="right">
+                <img src="Photos/Smallerlogo.jpg" alt="Logo" id="logo"/>
+            </div>
+            <div class="mygrid-9">
+                <nav> 
+                    <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Booking</a></li>
+                    <li><a href="https://www.facebook.com/Suzhou-Istanbul-Restaurant-251379868639799/?ref=ts&fref=ts" target="_blank"><img src="Photos/facebook.png" alt"facebook logo" id="facebook"/>Follow us on Facebook</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="mygrid-9">
+            <div class="mygrid-12 container">
+                 
+                 <p class="mygrid-12 paragraph">You can order your meal before coming to the our restaurant</p>
+                <hr>
+            </div>
+           
+            <section id="formSection" class="mygrid-12 container">
+                <div id="formContainer" class="mygrid-12"> 
+                    <form id="orderForm" action="addorder.php" method="post">
+                        <div class="mygrid-3 labeldiv">
+                        <label for="name">Name: </label>
+                        </div>
+                        <div class="mygrid-10">
+                        <input type="text" id="name" name="name" placeholder="Please enter your name here."> 
+                        </div>
+                         <div class="mygrid-3 labeldiv">
+                        <label for="name">Surname: </label>
+                        </div>
+                        <div class="mygrid-10">
+                        <input type="text" id="surname" name="surname" placeholder="Please enter your surname here."> 
+                        </div>
+                         <div class="mygrid-3 labeldiv">
+                        <label for="name">Food: </label>
+                        </div>
+                        <div class="mygrid-10">
+                        <input type="text" id="food" name="food" placeholder="Please enter the food that you wanted to order here."> 
+                        </div>
+                         <div class="mygrid-3 labeldiv">
+                        <label for="telno">Tel: </label>
+                        </div>
+                        <div class="mygrid-10">
+                        <input type="text" id="telno" name="tel" placeholder="Please enter your telephone no here."> 
+                        </div>
+                        <div class="mygrid-6 container">
+                        <label for="address">Pick a desired time when you want your meal is ready at:</label>
+                        </div>
+                        <div class="mygrid-9 container">
+                        <select id="selection" id="selection" name="selection">
+                            <option value="30mins">30mins</option> 
+                            <option value="60mins">60mins</option> 
+                            <option value="90mins">90mins</option> 
+                            <option value="120mins">120mins</option> 
+                        </select>
+                        </div>
+                        
+                        <div class="mygrid-4 container">
+                            <input type="submit" value="Order" class="orderButtons" onclick="CheckFields()">
+                            <input type="reset" value="Reset" class="orderButtons">
+                        </div>
+                       
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
+        
